@@ -30,8 +30,11 @@ from time import time
 from datetime import datetime
 
 class Timestamp(object):
-    def __init__(self):
-        self._epoch = time()
+    def __init__(self, epoch=None):
+        if epoch:
+            self.epoch = epoch
+        else:
+            self._epoch = time()
         self._timestamp = datetime.fromtimestamp(self._epoch)
         self._format = format
 
