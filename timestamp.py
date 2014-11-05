@@ -32,7 +32,7 @@ from datetime import datetime
 class Timestamp(object):
     def __init__(self, epoch=None):
         if epoch:
-            self.epoch = epoch
+            self._epoch = epoch
         else:
             self._epoch = time()
         self._timestamp = datetime.fromtimestamp(self._epoch)
@@ -69,6 +69,9 @@ class Timestamp(object):
             https://docs.python.org/2/library/time.html#time.strftime
         """
         return self._timestamp.strftime(format)
+
+    def __repr__(self):
+        return str(self._epoch)
 
     def __str__(self):
         """
