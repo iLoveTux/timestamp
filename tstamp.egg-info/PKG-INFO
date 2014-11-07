@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: tstamp
-Version: 1.0.0
+Version: 1.0.3
 Summary: A library which provides a higher level interface for creating and formatting timestamps.
 Home-page: https://github.com/iLoveTux/timestamp
 Author: iLoveTux

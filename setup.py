@@ -4,7 +4,8 @@ from setuptools.dist import Distribution
 
 setup(
     name="tstamp",
-    version="1.0.0",
+    version="1.0.3",
+    packages=['tstamp'],
     description="A library which provides a higher level interface for creating and formatting timestamps.",
     url="https://github.com/iLoveTux/timestamp",
     author="iLoveTux",
